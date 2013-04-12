@@ -221,6 +221,9 @@ public class MemoryMapBuildAction implements Action {
                     if (maxx > max) {
                         max = maxx;
                     }
+                    if (value > max) {
+                        max = value;
+                    }
                 }
                 if (!labelName.equals("")) {
                     dataset.add(value, labelName, label);
